@@ -110,7 +110,7 @@
         },
         {
           "file": "documentation.json",
-          "hash": "6080588011258848695"
+          "hash": "937905763224948146"
         },
         {
           "file": "nx.json",
@@ -172,7 +172,7 @@
         },
         {
           "file": "project.json",
-          "hash": "12921034083227095565"
+          "hash": "482220812760863608"
         },
         {
           "file": "server.ts",
@@ -231,6 +231,29 @@
           "hash": "12397496131277534773",
           "deps": [
             "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/components/coffe-card.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/coffe-card.component.html",
+          "hash": "1282246881385752953"
+        },
+        {
+          "file": "src/app/components/coffe-card.component.spec.ts",
+          "hash": "10500773193767105805",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/components/coffe-card.component.ts",
+          "hash": "14026127916664934414",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
           ]
         },
         {
@@ -407,7 +430,7 @@
         },
         {
           "file": "src/styles.scss",
-          "hash": "5195668842064076916"
+          "hash": "14572914990852494274"
         },
         {
           "file": "tsconfig.app.json",
@@ -422,27 +445,12 @@
           "hash": "15575553540147145788"
         },
         {
-          "file": "src/app/components/coffe-card.component.ts",
-          "hash": "14026127916664934414",
+          "file": "src/stories/CoffeCard.stories.ts",
+          "hash": "12119218394225095534",
           "deps": [
-            "npm:@angular/core",
+            "npm:@storybook/angular",
             "npm:@angular/common"
           ]
-        },
-        {
-          "file": "src/app/components/coffe-card.component.css",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "src/app/components/coffe-card.component.spec.ts",
-          "hash": "10500773193767105805",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "src/app/components/coffe-card.component.html",
-          "hash": "1282246881385752953"
         }
       ]
     }

@@ -8,7 +8,7 @@
     }
   },
   "sourceRoot": "src",
-  "prefix": "app",
+  "prefix": "devc",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:application",
