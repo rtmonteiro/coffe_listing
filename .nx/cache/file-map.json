@@ -274,7 +274,7 @@
         },
         {
           "file": "src/app/components/coffe-card.component.ts",
-          "hash": "3317097383097377248",
+          "hash": "6138063800025888997",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common"
@@ -335,7 +335,7 @@
         },
         {
           "file": "src/stories/CoffeCard.stories.ts",
-          "hash": "1161264501073144912",
+          "hash": "5545018141320108339",
           "deps": [
             "npm:@storybook/angular",
             "npm:@angular/common"

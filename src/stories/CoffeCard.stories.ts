@@ -1,6 +1,6 @@
 import { moduleMetadata, type Meta, type StoryObj } from '@storybook/angular';
 import { CoffeCardComponent } from '../app/components/coffe-card.component';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 
 // More on how to set up stories at: https://storybook.js.org/docs/angular/writing-stories/introduction
 const meta: Meta<CoffeCardComponent> = {
@@ -9,7 +9,7 @@ const meta: Meta<CoffeCardComponent> = {
   tags: ['autodocs'],
   decorators: [
     moduleMetadata({
-      imports: [CommonModule],
+      imports: [CommonModule, NgOptimizedImage],
     }),
   ],
   // render: (args: CoffeCardComponent) => ({
@@ -31,14 +31,15 @@ type Story = StoryObj<CoffeCardComponent>;
 // More on writing stories with args: https://storybook.js.org/docs/angular/writing-stories/args
 export const Primary: Story = {
   args: {
-    name: 'Cappuccino',
     coffe: {
-      name: 'Cappuccino',
-      imgSrc: 'https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg',
-      tag: 'Popular',
-      price: 5.20,
-      rating: 4.5,
-      votes: 65,
-    }
+      "id": 1,
+      "name": "Cappuccino",
+      "image": "https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg",
+      "price": "$5.20",
+      "rating": 4.7,
+      "votes": 65,
+      "popular": true,
+      "available": true
+    },
   },
 };

@@ -1,20 +1,31 @@
 <div class="card__container">
   <div class="card__header">
-    <img class="card__img" src="https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg">
-    <span class="card__tag">Popular</span>
+    <img class="card__img"
+         [ngSrc]="coffe.image" alt="{{coffe.name}}" width="300" height="200">
+    <ng-container *ngIf="coffe.popular">
+      <span class="card__tag">Popular</span>
+    </ng-container>
   </div>
   <div class="card__body">
     <div class="card__info">
-      <h3 class="card__title">Cappuccino</h3>
-      <span class="card__price">$5.20</span>
+      <h3 class="card__title">{{coffe.name}}</h3>
+      <span class="card__price">{{coffe.price}}</span>
     </div>
     <div class="card__footer">
       <span class="card__rate">
-        <i>⭐</i>
-        <span class="card__rating">4.7</span>
-        <span class="card__votes">(65 votes)</span>
+        <ng-container *ngIf="coffe.rating !== null; else noRating">
+          <i>⭐</i>
+          <span class="card__rating">{{coffe.rating}}</span>
+          <span class="card__votes">({{coffe.votes}} votes)</span>
+        </ng-container>
+        <ng-template #noRating>
+          <i>☆</i>
+          <span class="card__rating card__rating--none">No ratings</span>
+        </ng-template>
       </span>
-      <span class="card__sold-out">Sold out</span>
+      <ng-container *ngIf="!coffe.available">
+        <span class="card__sold-out">Sold out</span>
+      </ng-container>
     </div>
   </div>
 </div>
