@@ -31,7 +31,14 @@ type Story = StoryObj<CoffeCardComponent>;
 // More on writing stories with args: https://storybook.js.org/docs/angular/writing-stories/args
 export const Primary: Story = {
   args: {
-    primary: true,
-    label: 'CoffeCardComponent',
+    name: 'Cappuccino',
+    coffe: {
+      name: 'Cappuccino',
+      imgSrc: 'https://csyxkpbavpcrhwqhcpyy.supabase.co/storage/v1/object/public/assets/coffee-challenge/cappuccino.jpg',
+      tag: 'Popular',
+      price: 5.20,
+      rating: 4.5,
+      votes: 65,
+    }
   },
 };

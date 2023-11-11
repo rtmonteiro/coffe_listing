@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run coffe_listing:storybook",
+    "startTime": "2023-11-10T14:36:05.273Z",
+    "endTime": "2023-11-11T21:52:40.144Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "coffe_listing:storybook",
+      "target": "storybook",
+      "projectName": "coffe_listing",
+      "hash": "389802223711076183",
+      "startTime": "2023-11-10T14:36:05.287Z",
+      "endTime": "2023-11-11T21:52:40.142Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}
